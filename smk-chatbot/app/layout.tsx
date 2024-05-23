@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import "./markdown.css";
+import Chatbot from "./components/chatbase"
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +17,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="hr">
+    <html className="swup-enabled" lang="hr">
       <head>
   <meta charSet="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -24,46 +25,60 @@ export default function RootLayout({
   <link
     rel="apple-touch-icon"
     sizes="180x180"
-    href="https://smk.mef.unizg.hr/apple-touch-icon.png"
+    href="https://www.snz.unizg.hr/apple-touch-icon.png"
   />
   <link
     rel="icon"
     type="image/png"
     sizes="32x32"
-    href="https://smk.mef.unizg.hr/favicon-32x32.png"
+    href="https://www.snz.unizg.hr/favicon-32x32.png"
   />
   <link
     rel="icon"
     type="image/png"
     sizes="16x16"
-    href="https://smk.mef.unizg.hr/favicon-16x16.png"
+    href="https://www.snz.unizg.hr/favicon-16x16.png"
   />
-  <link rel="manifest" href="https://smk.mef.unizg.hr/site.webmanifest" />
+  <link rel="manifest" href="https://www.snz.unizg.hr/site.webmanifest" />
   <link
     rel="mask-icon"
-    href="https://smk.mef.unizg.hr/safari-pinned-tab.svg"
+    href="https://www.snz.unizg.hr/safari-pinned-tab.svg"
     color="#5bbad5"
   />
-  <meta name="msapplication-TileColor" content="#da532c" />
+  <meta name="msapplication-TileColor" content="#b91d47" />
   <meta name="theme-color" content="#ffffff" />
   <link
     rel="shortcut icon"
     type="image/x-icon"
-    href="https://smk.mef.unizg.hr/favicon.ico"
+    href="https://www.snz.unizg.hr/favicon.ico"
   />
   <link
     rel="stylesheet"
-    href="https://smk.mef.unizg.hr/app/build/assets/main.733c9e6f.css"
+    href="https://www.snz.unizg.hr/app/build/assets/main.8b544e69.css"
   />
-  <title>SMK – Središnja medicinska knjižnica</title>
+  <title>
+    Knjižnica “Andrija Štampar” – Škola narodnog zdravlja dr. Andrija Štampar
+  </title>
   <meta name="robots" content="max-image-preview:large" />
-  <link rel="alternate" hrefLang="hr" href="https://smk.mef.unizg.hr" />
-  <link rel="alternate" hrefLang="en" href="https://smk.mef.unizg.hr/en/" />
-  <link rel="alternate" hrefLang="x-default" href="https://smk.mef.unizg.hr" />
+  <link
+    rel="alternate"
+    hrefLang="hr"
+    href="https://www.snz.unizg.hr/ustroj/knjiznica-andrija-stampar/"
+  />
+  <link
+    rel="alternate"
+    hrefLang="en"
+    href="https://www.snz.unizg.hr/en/organization/andrija-stampar-library/"
+  />
+  <link
+    rel="alternate"
+    hrefLang="x-default"
+    href="https://www.snz.unizg.hr/ustroj/knjiznica-andrija-stampar/"
+  />
   <link
     rel="stylesheet"
     id="classic-theme-styles-css"
-    href="https://smk.mef.unizg.hr/wp/wp-includes/css/classic-themes.min.css?ver=6.2.2"
+    href="https://www.snz.unizg.hr/wp/wp-includes/css/classic-themes.min.css?ver=6.2.2"
     type="text/css"
     media="all"
   />
@@ -78,26 +93,37 @@ export default function RootLayout({
   <link
     rel="stylesheet"
     id="wpml-blocks-css"
-    href="https://smk.mef.unizg.hr/app/plugins/wpml/dist/css/blocks/styles.css?ver=4.6.4"
+    href="https://www.snz.unizg.hr/app/plugins/sitepress-multilingual-cms/dist/css/blocks/styles.css?ver=4.6.4"
+    type="text/css"
+    media="all"
+  />
+  <link
+    rel="stylesheet"
+    id="cmplz-general-css"
+    href="https://www.snz.unizg.hr/app/plugins/complianz-gdpr/assets/css/cookieblocker.min.css?ver=6.5.3"
     type="text/css"
     media="all"
   />
   <meta name="generator" content="WPML ver:4.6.4 stt:22,1;" />
   <style
-    type="text/css"
-    id="wp-custom-css"
     dangerouslySetInnerHTML={{
-      __html: "\n\t\t\t/*.grecaptcha-badge { visibility: hidden; }*/\t\t"
+      __html: ".cmplz-hidden{display:none!important;}"
     }}
   />
   <link
     rel="stylesheet"
-    href="https://smk.mef.unizg.hr/app/themes/mefknjiznica/resources/fonts/fonts.css"
+    href="/app/themes/snznovi/resources/fonts/fonts.css"
     media="all"
+  />
+  <link
+    href="https://www.snz.unizg.hr/app/uploads/complianz/css/banner-1-optin.css?v=16"
+    type="text/css"
+    rel="stylesheet"
   />
 </head>
 
-      <body className="first-load">{children}</body>
+
+      <body data-cmplz="1" className="first-load cmplz-functional cmplz-eu cmplz-optin">{children}</body>
     </html>
   );
 }
