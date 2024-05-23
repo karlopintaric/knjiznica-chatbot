@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import "./markdown.css";
-import Chatbot from "./components/chatbase"
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -121,7 +120,6 @@ export default function RootLayout({
     rel="stylesheet"
   />
 </head>
-
 
       <body data-cmplz="1" className="first-load cmplz-functional cmplz-eu cmplz-optin">{children}</body>
     </html>
