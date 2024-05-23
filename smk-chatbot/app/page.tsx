@@ -521,7 +521,7 @@ export default function Home() {
               />
               <h1>
                 <p>Škola narodnog zdravlja</p>
-                <p>"Andrija Štampar"</p>
+                <p>Andrija Štampar</p>
               </h1>
             </a>
           </div>
@@ -583,7 +583,7 @@ export default function Home() {
                       >
                         <span />
                         <a href="https://www.snz.unizg.hr/o-nama/memorijalna-zbirka-andrija-stampar/">
-                          Memorijalna zbirka “Andrija Štampar”
+                          Memorijalna zbirka Andrija Štampar
                         </a>
                       </li>
                     </ul>
@@ -657,7 +657,7 @@ export default function Home() {
                           href="https://www.snz.unizg.hr/ustroj/knjiznica-andrija-stampar/"
                           aria-current="page"
                         >
-                          Knjižnica “Andrija Štampar”
+                          Knjižnica Andrija Štampar
                         </a>
                       </li>
                       <li
@@ -931,7 +931,7 @@ export default function Home() {
               </span>{" "}
               <span property="itemListElement" typeof="ListItem">
                 <span property="name" className="post post-page current-item">
-                  Knjižnica “Andrija Štampar”
+                  Knjižnica Andrija Štampar
                 </span>
                 <meta
                   property="url"
@@ -966,7 +966,7 @@ export default function Home() {
                     />
                   </div>
                   <div className="intro__title">
-                    <h2>Knjižnica “Andrija Štampar”</h2>
+                    <h2>Knjižnica Andrija Štampar</h2>
                   </div>
                 </div>
               </div>
@@ -1035,7 +1035,7 @@ export default function Home() {
                     className=" is-active "
                     href="https://www.snz.unizg.hr/ustroj/knjiznica-andrija-stampar/"
                   >
-                    Knjižnica “Andrija Štampar”
+                    Knjižnica Andrija Štampar
                   </a>
                 </li>
                 <li className="menu-item">
@@ -1094,7 +1094,7 @@ export default function Home() {
                             transform: "translateY(0px) translateZ(0px)"
                           }}
                         >
-                          Rad Knjižnice "Andrija Štampar" tijekom obnove zgrade
+                          Rad Knjižnice Andrija Štampar tijekom obnove zgrade
                           ŠNZa
                         </h3>
                         <p
@@ -1105,7 +1105,7 @@ export default function Home() {
                           className="element-animated"
                         >
                           Tijekom obnove zgrade Škole narodnog zdravlja „Andrija
-                          Štampar“, Knjižnica „Andrija Štampar“ smještena je u
+                          Štampar“, Knjižnica Andrija Štampar smještena je u
                           prostorima Središnje medicinske knjižnice Medicinskog
                           fakultet Sveučilišta u Zagrebu, na adresi Šalata 3b.
                         </p>
@@ -1116,7 +1116,7 @@ export default function Home() {
                           }}
                           className="element-animated"
                         >
-                          Ističemo da su sve usluge Knjižnice „Andrija Štampar“
+                          Ističemo da su sve usluge Knjižnice Andrija Štampar
                           kontinuirano dostupne korisnicima. Usluga posudbe i
                           povrata knjižne građe pruža se na Šalati 3b (u već
                           spomenutoj Središnjoj medicinskoj knjižnici), a za
@@ -1348,7 +1348,7 @@ export default function Home() {
                                   </div>
                                   <h4 className="news__title news__title--simply">
                                     [KNJIŽNICA ŠNZ] Nova organizacija rada
-                                    Knjižnice “Andrija Štampar”
+                                    Knjižnice Andrija Štampar
                                   </h4>
                                 </div>
                               </a>
@@ -1503,10 +1503,10 @@ export default function Home() {
                     <div id="povijest-knjiznice" className="tabs__pane">
                       <div className="content">
                         <h3 className="wp-block-heading">
-                          Povijest knjižnice "Andrija Štampar"
+                          Povijest knjižnice Andrija Štampar
                         </h3>
                         <p>
-                          Knjižnica “Andrija Štampar” osnovana je 1927. godine i
+                          Knjižnica Andrija Štampar osnovana je 1927. godine i
                           jedna je od najstarijih javnozdravstvenih knjižnica u
                           ovom dijelu svijeta. Iste je godine osnovan Higijenski
                           zavod sa Školom narodnog zdravlja čiji je knjižnica
@@ -1517,7 +1517,7 @@ export default function Home() {
                         </p>
                         <p>
                           Sve ove promjene utjecale su na fond knjižnice
-                          „Andrija Štampar“.
+                          Andrija Štampar.
                         </p>
                         <p>
                           U knjižnici se mogu pronaći vrlo stare i rijetke
@@ -1903,7 +1903,7 @@ export default function Home() {
       <div className="row">
         <div className="col-xs-12">
           <div className="footer__copyright__content">
-            Copyright © 2023 Škola narodnog zdravlja "Andrija Štampar”. Sva
+            Copyright © 2023 Škola narodnog zdravlja Andrija Štampar. Sva
             prava pridržana.
           </div>
         </div>
