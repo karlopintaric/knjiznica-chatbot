@@ -5,7 +5,6 @@ import Chatbot from "./components/chatbase"
 export default function Home() {
   return (
     <>
-  <Chatbot />
   <div id="cmplz-cookiebanner-container">
     <div
       className="cmplz-cookiebanner cmplz-hidden banner-1 optin cmplz-bottom-right cmplz-categories-type-save-preferences"
@@ -839,7 +838,7 @@ export default function Home() {
                     autoComplete="off"
                     pattern=".{3,}"
                     title="Minimalno 3 znaka"
-                    required
+                    required=""
                     className="header__search__term"
                   />
                 </div>
@@ -915,7 +914,7 @@ export default function Home() {
                     Škola narodnog zdravlja dr. Andrija Štampar
                   </span>
                 </a>
-                <meta property="position" content="1" />
+                <meta property="position" content={1} />
               </span>{" "}
               &gt;{" "}
               <span property="itemListElement" typeof="ListItem">
@@ -928,7 +927,7 @@ export default function Home() {
                 >
                   <span property="name">Ustroj</span>
                 </a>
-                <meta property="position" content="2" />
+                <meta property="position" content={2} />
               </span>{" "}
               &gt;{" "}
               <span property="itemListElement" typeof="ListItem">
@@ -939,7 +938,7 @@ export default function Home() {
                   property="url"
                   content="https://www.snz.unizg.hr/ustroj/knjiznica-andrija-stampar/"
                 />
-                <meta property="position" content="3" />
+                <meta property="position" content={3} />
               </span>
             </div>
           </div>
@@ -1231,8 +1230,8 @@ export default function Home() {
                         <figure className="wp-block-image size-full">
                           <img
                             src="https://www.snz.unizg.hr/app/uploads/2017/05/Lovela-1.png"
-                            width={1}
-                            height={1}
+                            width={10}
+                            height={10}
                             alt=""
                             className="wp-image-432"
                           />
